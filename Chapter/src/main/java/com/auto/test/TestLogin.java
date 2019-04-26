@@ -40,6 +40,7 @@ public class TestLogin {
         password.clear();
         password.sendKeys(FindLoginUser.findUserById(2).getPassword());
         driver.findElement(By.className("t_btn")).click();
+        Thread.sleep(5000);
     }
 
     @Test
