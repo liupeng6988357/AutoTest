@@ -5,18 +5,18 @@
 
     <test name="login">
         <classes>
-<!--            <class name="com.auto.test.TestLogin">-->
+<!--            <class name="com.auto.test.LgoinTest">-->
 <!--                <methods>-->
 <!--                    <include name="loginTestNormal"/>-->
 <!--                    <include name="loginTestPasswordException"/>-->
 <!--                    <include name="loginTestUsernameException" />-->
 <!--                </methods>-->
 <!--            </class>-->
-                <class name="com.auto.test.CreateDivideClassTaskTest">
-                    <methods>
-                        <include name="CDCTaskNormalTest"/>
-                    </methods>
-                </class>
+            <class name="com.auto.test.CreateDivideClassTaskTest">
+                <methods>
+                    <include name="CDCTaskNormalTest" description="创建分班任务功能测试"/>
+                </methods>
+            </class>
         </classes>
     </test>
 
