@@ -50,7 +50,8 @@ public class LgoinTest extends TestBeforeService {
         try {
             TestBeforeService.getDriver().findElement(By.xpath(GetValues.getValue("passwordinput")));
         }catch(NoSuchElementException e){
-            throw new NoSuchElementException("密码错误可以登录");
+            throw new NoSuchElementException("密码错误可以登录"+"username="+FindLoginUser.findUserById(3).getUsername()
+            +"---"+"password="+FindLoginUser.findUserById(3).getPassword());
         }
 
     }
